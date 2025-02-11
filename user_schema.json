@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Users Collection Schema",
+  "type": "object",
+  "properties": {
+    "birthday": {
+      "type": "string",
+      "format": "date-time",
+      "description": "User's birthday"
+    },
+    "created_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Time when the user was created"
+    },
+    "display_name": {
+      "type": "string",
+      "description": "User's display name"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "User's email address"
+    },
+    "favorite_food": {
+      "type": "string",
+      "description": "User's favorite food"
+    },
+    "photo_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the user's photo"
+    },
+    "uid": {
+      "type": "string",
+      "description": "Unique identifier for the user"
+    }
+  },
+  "required": ["birthday", "created_time", "display_name", "email", "uid"]
+}
